@@ -1,0 +1,143 @@
+
+@font-face
+{
+    font-family: 'english_towneregular';
+    src: url('englishtowne-webfont.eot');
+    src: url('englishtowne-webfont.eot?#iefix') format('embedded-opentype'),
+    url('englishtowne-webfont.woff2') format('woff2'),
+    url('englishtowne-webfont.woff') format('woff'),
+    url('englishtowne-webfont.ttf') format('truetype'),
+    url('englishtowne-webfont.svg#english_towneregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+section
+{
+    min-width: 800px;
+    min-height: 600px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1
+{
+    text-transform: uppercase;
+    font-size: 60px;
+    font-family: 'english_towneregular', serif;
+    letter-spacing: 3px;
+    text-align: center;
+    margin: .3em;
+}
+
+h2
+{
+    text-transform: uppercase;
+    -webkit-column-span: all;
+    column-span: all;
+    text-align: center;
+    font-size: 50px;
+    margin: .3em;
+    word-spacing: .3em;
+    letter-spacing: 2px;
+}
+
+h3
+{
+    text-transform: uppercase;
+    -webkit-column-span: all;
+    column-span: all;
+    text-align: center;
+    font-size: 40px;
+    margin: .3em;
+    font-style: italic;
+    letter-spacing: 3px;
+}
+
+h4
+{
+    text-transform: capitalize;
+    text-align: center;
+}
+
+h4::first-letter
+{
+    font-size: 1.1em;
+    color: #fff;
+    margin: 0 2px 0 0;
+    background: #0C0337;
+}
+
+p
+{
+    text-align: justify;
+    text-indent: -1em;
+}
+
+.header-line
+{
+    -webkit-column-span: all;
+    column-span: all;
+}
+
+.newspaper-main
+{
+    -moz-column-count: 3; /* Для Firefox */
+    -webkit-column-count: 3; /* Для Safari и Chrome */
+    column-count: 3;
+    -moz-column-rule: 1px solid #000;
+    -webkit-column-rule: 1px solid #000;
+    column-rule: 1px solid #000;
+    -moz-column-gap: 3em;
+    -webkit-column-gap: 3em;
+    column-gap: 3em;
+    -moz-column-fill: balance;
+    column-fill: balance;
+    max-height: 1600px;
+}
+
+.keeptogether
+{
+    display: inline-block;
+    width: 100%;
+}
+
+.afterheader
+{
+    -moz-column-count: 3;
+    -webkit-column-count: 3;
+    column-count: 3;
+}
+
+.left
+{
+    text-align: left;
+}
+
+.right
+{
+    text-align: right;
+}
+
+.center
+{
+    text-align: center;
+}
+
+.speaker
+{
+    text-transform: uppercase;
+}
+
+img
+{
+    width: 100%;
+    max-width: 400px;
+}
+
+.img-container
+{
+
+}
+
+
