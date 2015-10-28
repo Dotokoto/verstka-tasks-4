@@ -153,6 +153,13 @@ h4::first-letter
     background: #0C0337;
 }
 
+h5
+{
+    font-family: 'almendra', serif;
+    font-size: 16px;
+    text-align: center;
+}
+
 p
 {
     text-align: justify;
@@ -164,6 +171,7 @@ p
 {
     -webkit-column-span: all;
     column-span: all;
+    margin: 14px 0;
 }
 
 .newspaper-main
