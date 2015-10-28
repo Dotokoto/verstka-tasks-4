@@ -90,6 +90,12 @@
     src: url('fonts/AftaSerifThin-Regular.otf');
 }
 
+@font-face
+{
+    font-family: 'andada';
+    src: url('fonts/Andada-Regular.otf');
+}
+
 html
 {
     height: 100%;
@@ -176,9 +182,19 @@ p
 {
     text-align: justify;
     text-indent: -1em;
-    font: 1em 'afta', serif;
+    font-size: 1em;
     break-inside: avoid-column;
     -webkit-column-break-inside: avoid;
+}
+
+#andada-font-radio:checked ~ section p
+{
+    font-family: 'andada', serif;
+}
+
+#afta-font-radio:checked ~ section p
+{
+    font-family: 'afta', serif;
 }
 
 .header-line
