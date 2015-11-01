@@ -96,6 +96,12 @@
     src: url('fonts/Andada-Regular.otf');
 }
 
+@font-face
+{
+    font-family: 'promocyja';
+    src: url('fonts/promocyja.otf');
+}
+
 html
 {
     height: 100%;
@@ -109,7 +115,6 @@ body
 section
 {
     min-width: 800px;
-    min-height: 600px;
     max-width: 1300px;
     padding: 10px 28px;
     margin: 0 auto;
@@ -121,6 +126,7 @@ h1
     font-size: 5em;
     font-family: 'english_towneregular', serif;
     letter-spacing: .05em;
+    font-weight: normal;
     text-align: center;
     margin: .3em;
 }
@@ -163,13 +169,6 @@ h4
     margin: 10px 0;
 }
 
-h4::first-letter
-{
-    color: #fff;
-    margin: 0 2px 0 0;
-    background: #0C0337;
-}
-
 h5
 {
     font-family: 'almendra', serif;
@@ -181,7 +180,7 @@ h5
 p
 {
     text-align: justify;
-    text-indent: -1em;
+    text-indent: 1em;
     font-size: 1em;
     break-inside: avoid-column;
     -webkit-column-break-inside: avoid;
@@ -215,8 +214,8 @@ p
     -moz-column-gap: 3em;
     -webkit-column-gap: 3em;
     column-gap: 3em;
-    -moz-column-fill: balance;
-    column-fill: balance;
+    padding: 10px;
+    height: 100%;
 }
 
 .keeptogether
@@ -253,6 +252,22 @@ p
     text-transform: uppercase;
 }
 
+.two-column
+{
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-count: 2;
+    -moz-column-rule: 1px solid #000;
+    -webkit-column-rule: 1px solid #000;
+    column-rule: 1px solid #000;
+    -moz-column-gap: 3em;
+    -webkit-column-gap: 3em;
+    column-gap: 3em;
+    -moz-column-fill: balance;
+    column-fill: balance;
+    -webkit-perspective: 1;
+}
+
 img
 {
     width: 100%;
@@ -277,12 +292,7 @@ img
     background-color: #000;
 }
 
-#dark-style-radio:checked ~ section h4::first-letter
-{
-    color: #0C0337;
-    margin: 0 2px 0 0;
-    background: #fff;
-}
+
 
 #dark-style-radio:checked ~ section .newspaper-main
 {
@@ -304,4 +314,86 @@ img
 #small-font-radio:checked ~ section
 {
     font-size: 12px;
+}
+
+.poem
+{
+    border: 5px solid #666;
+    margin: 0 -5px 1em;
+    -webkit-column-break-before: always;
+    break-before: column;
+}
+
+.poem header h4, .poem header p
+{
+    text-align: center;
+    font-family: 'almendra', serif;
+}
+
+.poem main p
+{
+    margin: .5em 0;
+    -webkit-margin-before: .5em;
+    -webkit-margin-after: .5em;
+    padding: 0 8px;
+    font-size: .95em;
+}
+
+.poem main p:first-of-type:first-letter
+{
+    font-family: 'promocyja', serif !important;
+    font-size: 2.7em;
+}
+
+
+.poem-right
+{
+    padding-left: 8em !important;
+}
+
+.poem-center
+{
+    padding-left: 5em !important;
+}
+
+.column-span
+{
+    column-span: all;
+    -webkit-column-span: all;
+    width: 100%;
+    display: block;
+    margin: 10px auto;
+}
+
+
+img.column23
+{
+    display: block;
+    column-span: all;
+    -webkit-column-span: all;
+    height: 200px;
+    margin-bottom: 20px;
+    margin-left: calc(33.3% + 10px);
+    width: calc(66.6% - 10px);
+}
+
+img.column12
+{
+    display: block;
+    column-span: all;
+    -webkit-column-span: all;
+    margin-bottom: 20px;
+    margin-right: 0;
+    width: calc(66.6% - 10px);
+    height: 200px;
+    break-after: always;
+    -webkit-column-break-after: always;
+}
+
+.break-after
+{
+    -webkit-column-break-after: always;
+    break-after: column;
+    page-break-after: always;
+    border-width: 0;
 }

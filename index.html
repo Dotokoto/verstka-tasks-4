@@ -7,24 +7,24 @@
     </head>
     <body>
         Стиль газеты:
-        <label for="light-style-radio">Светлый</label>
         <input id="light-style-radio" type="radio" name="style" value="light-style" checked>
-        <label for="dark-style-radio">Темный</label>
+        <label for="light-style-radio">Светлый</label>
         <input id="dark-style-radio" type="radio" name="style" value="dark-style">
+        <label for="dark-style-radio">Темный</label>
         <br>
         Размер шрифта:
-        <label for="small-font-radio">Маленький</label>
         <input id="small-font-radio" type="radio" name="font-size" value="small">
-        <label for="normal-font-radio">Нормальный</label>
+        <label for="small-font-radio">Маленький</label>
         <input id="normal-font-radio" type="radio" name="font-size" value="normal" checked>
-        <label for="big-font-radio">Большой</label>
+        <label for="normal-font-radio">Нормальный</label>
         <input id="big-font-radio" type="radio" name="font-size" value="big">
+        <label for="big-font-radio">Большой</label>
         <br>
         Шрифт:
-        <label for="afta-font-radio">Afta</label>
         <input id="afta-font-radio" type="radio" name="font" value="afta" checked>
-        <label for="andada-font-radio">Andada</label>
+        <label for="afta-font-radio">Afta</label>
         <input id="andada-font-radio" type="radio" name="font" value="andada">
+        <label for="andada-font-radio">Andada</label>
         <br>
         <section>
             <header>
@@ -45,7 +45,7 @@
                 <hr class="header-line">
             </header>
             <main class="newspaper-main">
-                <article class="keeptogether">
+                <article>
                     <header>
                         <h4>Voice from Moon: 'Eagle has landed'</h4>
                     </header>
@@ -120,14 +120,68 @@
                         <p><span class="speaker">houston</span>: Eagle, you are stay for T2. Over.</p>
                     </main>
                 </article>
-                <article class="keeptogether">
-                    <img src="img/man-on-the-moon.jpg" alt="Man on the Moon">
+                <img src="img/man-on-the-moon.jpg" alt="Man on the Moon">
+                <hr class="break-after">
+                <article class="poem keeptogether">
+                    <header>
+                        <h4>VOYAGE TO THE MOON</h4>
+                        <p>Archibald MacLeish</p>
+                        <p>(1892-1982)</p>
+                    </header>
+                    <hr>
+                    <main>
+                        <p>Presence among us,</p>
+                        <p class="poem-right">wanderer in the skies,</p>
+                        <p>dazzle of silver in our leaves and on our waters silver,</p>
+                        <p class="poem-center">O</p>
+                        <p>silver evasion in our farthest thought–
+                        “the visiting moon”... “the glimpses of the moon”...</p>
+                        <p>and we have touched you!</p>
+                        <br>
+                        <p class="poem-right">From the first of time,</p>
+                        <p>before the first of time, before the</p>
+                        <p>first men tasted time, we thought of you.</p>
+                        <p>You were a wonder to us, unattainable,</p>
+                        <p>a longing past the reach of longing,</p>
+                        <p>a light beyond our light, our lives–perhaps</p>
+                        <p>a meaning to us.</p>
+                        <br>
+                        <p class="poem-center">Now</p>
+                        <p>our hands have touched you in your depth of night.</p>
+                        <br>
+                        <p>Three days and three nights we journeyed,</p>
+                        <p>steered by farthest stars, climbed outward,</p>
+                        <p>crossed the invisible tide-rip where the floating dust</p>
+                        <p>falls one way or the other in the void between,</p>
+                        <p>followed that other dawn, encountered</p>
+                        <p>cold, faced death–unfathomable emptiness...</p>
+                        <br>
+                        <p>Then, the fourth day evening, we descended,</p>
+                        <p>made fast, set foot at dawn upon your beaches,</p>
+                        <p>sifted between our fingers your cold sand,</p>
+                        <br>
+                        <p>We stand here in the dusk, the cold, the silence...</p>
+                        <br>
+                        <p>and here, as at the first of time, we lift our heads.</p>
+                        <p>Over us, more beautiful than the moon, a</p>
+                        <p>moon, a wonder to us, unattainable,</p>
+                        <p>a longing past the reach of longing,</p>
+                        <p>a light beyond our light, our lives–perhaps</p>
+                        <p>a meaning to us...</p>
+                        <p class="poem-center">O, a meaning!</p>
+                        <br>
+                        <p>Over us on these silent beaches the bright earth,</p>
+                        <p>presence among us.</p>
+                    </main>
+                </article>
+                <article>
                     <img src="img/www.usnews.com.jpg" alt="Man on the Moon">
+                    <hr class="break-after">
                     <img src="img/apollo_14_lm.jpg" alt="Apollo">
                 </article>
-                <article class="keeptogether">
+                <article class="two-column">
                     <header>
-                        <h4>A powdery surface is closely explored</h4>
+                        <h4 class="keeptogether">A powdery surface is closely explored</h4>
                     </header>
                     <main>
                         <p>Houston, Monday, July 21&mdash;Men have landed and walked on the moon.</p>
@@ -160,6 +214,7 @@
                             outside the craft transmitted his every move to an awed and excited audience
                             of hundreds of millions of people on earth.
                         </p>
+                        <hr class="break-after">
                         <h5>Tentative Steps Test Soil</h5>
                         <p>
                             Mr. Armstrong's initial steps were tentative tests of the lunar soil's
